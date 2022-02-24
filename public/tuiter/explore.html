@@ -1,177 +1,146 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Explore</title>
-    <link href="explore.css" rel="stylesheet"/>
+    <link href="../vendors/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="../vendors/jquery/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="../vendors/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <link href="../vendors/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="explore.css" rel="stylesheet">
+    <script src="explore.js" type="text/javascript"></script>
 </head>
-
-<body>
-<div class="wd-main">
-    <div class="wd-form01">
-        <form>
-            <div class="wd-search"><img src="search.png" width="40px"/></div>
-            <input type="text" placeholder="Search Tuiter" class="wd-input01">
-            <div class="wd-cl">
-                <a href="explore-settings.html"><img src="cl.png" width="40px"/></a>
+<body class="bg">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-1 col-md-2 col-lg-2">
+            <ul class="list-group bg">
+                <mynav>
+                    <li class="list-group-item bg"><i class="fa fa-twitter"></i></li>
+                    <li class="list-group-item bg"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</li>
+                    <li class="list-group-item bg"><i class="fa fa-hashtag"></i>&nbsp;&nbsp;Explore</li>
+                    <li class="list-group-item bg"><i class="fa fa-bell"></i>&nbsp;&nbsp;Notifications</li>
+                    <li class="list-group-item bg"><i class="fa fa-envelope"></i>&nbsp;&nbsp;Messages</li>
+                    <li class="list-group-item bg"><i class="fa fa-bookmark"></i>&nbsp;&nbsp;Bookmarks</li>
+                    <li class="list-group-item bg"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Lists</li>
+                    <li class="list-group-item bg"><i class="fa fa-user"></i>&nbsp;&nbsp;Profile</li>
+                    <li class="list-group-item bg"><i class="fa fa-circle"></i>&nbsp;&nbsp;More</li>
+                </mynav>
+            </ul>
+            <button class="btn btn-primary" style="border-radius: 30px;width: 100%;margin-top: 5px;">Tweet</button>
+        </div>
+        <div class="col-sm-10 col-md-8 col-lg-6">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-11">
+                        <div class="wrapper" class="bg">
+                            <i class="fa fa-search iconSearch"></i>
+                            <input type="text" style="background: #777c80" placeholder="Search Tuiter" class="search">
+                        </div>
+                    </div>
+                    <div class="col-1" style="padding-top: 8px;text-align: right;">
+                        <i class="fa fa-cog fa-fw bg" style="font-size: 20px;color: #000000"></i>
+                    </div>
+                </div>
             </div>
-        </form>
-    </div>
+            <div class="col-12">
+                <ul class="tab">
+                    <li class="active">For you</li>
+                    <li>Trending</li>
+                    <li>COVID</li>
+                    <li>News</li>
+                    <li>Sports</li>
+                    <li>Entertainment</li>
+                </ul>
+                <ul class="content">
+                    <li style="display: block;"><img src="2.jpg" class="img-fluid float-left"></li>
+                    <li><img src="2.jpg" class="img-fluid"></li>
+                    <li><img src="2.jpg" class="img-fluid"></li>
+                    <li><img src="2.jpg" class="img-fluid"></li>
+                </ul>
+            </div>
+            <div class="col-12">
+                <ul class="list-group bg" style="font-size: 13px;">
+                    <li class="list-group-item bg">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-11">
+                                    <div style="color: #bec6cb">Trending in R&B soul</div>
+                                    <div>R Kelly&nbsp;&nbsp;<i class="fa fa-check-circle"></i>&nbsp;&nbsp;<span
+                                            style="color: #bec6cb">- 2h</span></div>
+                                    <div style="color: #bec6cb">18.2K Tweets</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item  bg">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-11">
+                                    <div style="color: #bec6cb">Trending in R&B soul</div>
+                                    <div>Chloe&nbsp;&nbsp;<i class="fa fa-check-circle"></i>&nbsp;&nbsp;<span
+                                            style="color: #bec6cb">- 2h</span></div>
+                                    <div style="color: #bec6cb">Trending with Halle</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item bg">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-11">
+                                    <div>The Times&nbsp;&nbsp;<i class="fa fa-check-circle"></i>&nbsp;&nbsp;<span
+                                            style="color: #bec6cb">September 24,2021</span></div>
+                                    <div>Stanley Tucci: 'Food or sex? That's the cruellest question...'</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-    <div class="wd-nav">
-        <ul>
-            <li class="wd-active"> For you</li>
-            <li>Trending</li>
-            <li> COVID-19</li>
-            <li> News</li>
-            <li> Sports</li>
-            <li> Entertainment</li>
-        </ul>
-    </div>
-
-    <div class="wd-hf"></div>
-
-    <div class="wd-new01">
-        <table width="100%" border="0">
-            <tbody>
-            <tr>
-                <td><span class="wd-title01">Trending in Science</span></td>
-                <td align="right"><span class="wd-title02">...</span></td>
-            </tr>
-            <tr>
-                <td><span class="wd-title03">Starship</span></td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td><span class="wd-title04">55.5k Tweets</span></td>
-                <td>&nbsp;</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="wd-new01">
-        <table width="100%" border="0">
-            <tbody>
-            <tr>
-                <td><span class="wd-title01">Sport·Trending</span></td>
-                <td align="right"><span class="wd-title02">...</span></td>
-            </tr>
-            <tr>
-                <td><span class="wd-title03">Joe Rogan</span></td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td><span class="wd-title04">5,218 Tweets</span></td>
-                <td>&nbsp;</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="wd-new01">
-        <table width="100%" border="0">
-            <tbody>
-            <tr>
-                <td>
-                    <span class="wd-author01"><img src="authorimg01.jpg" width="20" height="21"
-                    /></span>
-                    <span class="wd-author02">The New York Times</span>
-                    <span class="wd-author03"><img src="authorimg03.jpg" width="20" height="20"
-                    /></span>
-                    <span class="wd-title01">Sport·Trending</span>
-                </td>
-                <td rowspan="3">
-                    <div class="wd-img01"><img src="img01.jpg" width="100px" height="100px"/>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><span class="wd-title03">CNN'S Cuomo conundrum: A star anchor with a brother in <br>
-trouble</span></td>
-
-            </tr>
-            <tr>
-                <td><span class="wd-title04" style="color:#000;"> 00 </span></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="wd-new01">
-        <table width="100%" border="0">
-            <tbody>
-            <tr>
-                <td>
-                    <!--<span class="wd-author01"><img src="authorimg01.jpg" width="20" height="21" /></span>
-                    <span class="wd-author02">The New York Times</span>
-                    <span class="wd-author03"><img src="authorimg03.jpg" width="20" height="20" /></span>-->
-                    <span class="wd-title01">COVID-19·LIVE</span>
-                </td>
-                <td rowspan="3">
-                    <div class="wd-img01"><img src="img02.jpg" width="100px" height="100px"/>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><span class="wd-title03">COVID-19:News and updates for Massachusetts</span></td>
-
-            </tr>
-            <tr>
-                <td><span class="wd-title04" style="color:#000;"> 00 </span></td>
-
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="wd-new01">
-        <table width="100%" border="0">
-            <tbody>
-            <tr>
-                <td>
-                    <span class="wd-author01"><img src="authorimg02.jpg" width="20" height="21"
-                    /></span>
-                    <span class="wd-author02">Bloomberg Opinion</span>
-                    <span class="wd-author03"><img src="authorimg03.jpg" width="20" height="20"
-                    /></span>
-                    <span class="wd-title01">Yesterday</span>
-                </td>
-                <td rowspan="3">
-                    <div class="wd-img01"><img src="img03.jpg" width="100px" height="100px"/>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><span
-                        class="wd-title03">Thinking about getting a booster? Read this first.</span>
-                </td>
-
-            </tr>
-            <tr>
-                <td><span class="wd-title04" style="color:#000;"> 00 </span></td>
-
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="wd-new01">
-        <table width="100%" border="0">
-            <tbody>
-            <tr>
-                <td><span class="wd-title01">Trending in United States</span></td>
-                <td align="right"><span class="wd-title02">...</span></td>
-            </tr>
-            <tr>
-                <td><span class="wd-title03">Wonder Bread</span></td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td><span class="wd-title04">1.259 Tweets</span></td>
-                <td>&nbsp;</td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="col-md-4 col-lg-4">
+            <span class="myhide">
+                <ul class="list-group bg bga" style="font-size: 13px;">
+                    <li class="list-group-item bg bga" style="font-weight:bold">Who to follow</li>
+                    <li class="list-group-item bg bga">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-1" style="font-size: 30px">
+                                    <i class="fa fa-html5"></i>
+                                </div>
+                                &nbsp;
+                                <div class="col-8">
+                                    <div style="font-weight:bold">The Babylon Bee <i class="fa fa-check-circle"></i></div>
+                                    <div>@TheBabylonBee</div>
+                                </div>
+                                <div class="col-2" style="padding-top: 8px;">
+                                   <a style="border-radius: 35px;background: #ffffff;color: #1b1e21" class="btn btn-light btn-sm" >Follow</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item bg bga">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-1" style="font-size: 30px">
+                                    <i class="fa fa-address-card"></i>
+                                </div>
+                                &nbsp;
+                                <div class="col-8">
+                                    <div style="font-weight:bold">Jack Posobiec <i class="fa fa-check-circle"></i></div>
+                                    <div>@JackPosobiec</div>
+                                </div>
+                                <div class="col-2" style="padding-top: 8px;">
+                                   <a style="border-radius: 35px;background: #ffffff;color: #1b1e21" class="btn btn-light btn-sm" >Follow</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </span>
+        </div>
     </div>
 </div>
 </body>
