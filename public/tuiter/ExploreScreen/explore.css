@@ -1,0 +1,71 @@
+#wd-explore {
+    padding-bottom: 26px;
+}
+.poster-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.poster-wrapper img{
+    width: 100%;
+}
+.search {
+    border-radius: 20px;
+}
+.foll-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.foll-list p {
+    margin: 0;
+    padding: 0;
+}
+.foll-list img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+.foll-list .info {
+    flex: 1;
+    margin-left: 12px;
+}
+.summary {
+    margin-top: 12px;
+}
+.foll-list button {
+    border-radius: 20px;
+}
+.summary p {
+    margin: 0;
+    padding: 0;
+}
+.summary li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.summary  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+}
+.summary .topic {
+    color: rgba(255,255,255, 0.4);
+    line-height: 28px;
+}
+.summary .time {
+    color: rgba(255,255,255, 0.4);
+}
+.rad-fill {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.summary .userName {
+    line-height: 24px;
+}
+.summary .title {
+    font-size: 14px;
+}
