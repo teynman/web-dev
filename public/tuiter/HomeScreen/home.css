@@ -1,0 +1,58 @@
+#wd-home {
+    padding-bottom: 26px;
+}
+.post .user{
+    margin-right:0;
+    padding-right: 0;
+    text-align: center;
+}
+.post .detail{
+    margin-left:0;
+    padding-left: 0;
+}
+.post .post_title{
+    font-weight:bold;
+}
+.post .post_sub{
+    font-size:14px;
+}
+.post .detail .more{
+    text-align: right;
+    cursor: pointer;
+}
+.post .sub_title{
+    font-size: 13px;
+    color: #626060;
+}
+.post .user img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.post .main img{
+    width: 100%;
+    border-radius: 8px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.post .detail .fa{
+    margin-right:10px;
+}
+.foll-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.foll-list p {
+    margin: 0;
+    padding: 0;
+}
+.foll-list img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+.foll-list .info {
+    flex: 1;
+    margin-left: 12px;
+}
