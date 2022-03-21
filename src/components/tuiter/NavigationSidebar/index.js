@@ -11,32 +11,32 @@ const NavigationSidebar = ({
                     <i className="fab fa-twitter"></i></a>
 
                 <a className={`list-group-item
-        ${active === 'home' ? 'active' : ''}`}><i className="fa fa-home"></i>&nbsp;&nbsp;Home</a>
+        ${active === 'home' ? 'active' : ''}`} href="/"><i className="fa fa-home"></i>&nbsp;&nbsp;Home</a>
 
                 <a className={`list-group-item
-        ${active === 'explore' ? 'active' : ''}`}><i className="fa fa-hashtag"></i>&nbsp;&nbsp;Explore</a>
+        ${active === 'explore' ? 'active' : ''}`} href="/"><i className="fa fa-hashtag"></i>&nbsp;&nbsp;Explore</a>
 
                 <a className={`list-group-item
-        ${active === 'notifications' ? 'active' : ''}`}><i
+        ${active === 'notifications' ? 'active' : ''}`} href="/"><i
                     className="fa fa-bell"></i>&nbsp;&nbsp;Notifications</a>
 
                 <a className={`list-group-item
-        ${active === 'messages' ? 'active' : ''}`}><i
+        ${active === 'messages' ? 'active' : ''}`} href="/"><i
                     className="fa fa-envelope"></i>&nbsp;&nbsp;Messages</a>
 
                 <a className={`list-group-item
-        ${active === 'bookmarks' ? 'active' : ''}`}><i
+        ${active === 'bookmarks' ? 'active' : ''}`} href="/"><i
                     className="fa fa-bookmark"></i>&nbsp;&nbsp;Bookmarks</a>
 
                 <a className={`list-group-item
-        ${active === 'lists' ? 'active' : ''}`}><i
+        ${active === 'lists' ? 'active' : ''}`} href="/"><i
                     className="fa fa-list-ul"></i>&nbsp;&nbsp;Lists</a>
 
                 <a className={`list-group-item
-        ${active === 'profile' ? 'active' : ''}`}><i className="fa fa-user"></i>&nbsp;&nbsp;Profile</a>
+        ${active === 'profile' ? 'active' : ''}`} href="/"><i className="fa fa-user"></i>&nbsp;&nbsp;Profile</a>
 
                 <a className={`list-group-item
-        ${active === 'more' ? 'active' : ''}`}><i className="fa fa-circle"></i>&nbsp;&nbsp;More</a>
+        ${active === 'more' ? 'active' : ''}`} href="/"><i className="fa fa-circle"></i>&nbsp;&nbsp;More</a>
 
             </div>
             <div className="d-grid mt-2">
