@@ -4,6 +4,7 @@ import Classes from "./classes";
 import Styles from "./styles";
 import ConditionalOutput from "./conditional-output";
 import TodoList from "./todo/TodoList";
+import ReduxExamples from "./redux-examples";
 
 const Labs = () => {
     return(
@@ -19,6 +20,7 @@ const Labs = () => {
             <Styles/>
             <Classes/>
             <TodoList/>
+            <ReduxExamples/>
         </>
     )
 };

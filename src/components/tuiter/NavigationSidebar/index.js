@@ -5,16 +5,16 @@ const NavigationSidebar = ({
                            }
 ) => {
     return (
-        <div className="col-2 col-md-2 col-lg-1 col-xl-2">
+        <div>
             <div className="list-group">
                 <a className="list-group-item" href="/">
                     <i className="fab fa-twitter"></i></a>
 
                 <a className={`list-group-item
-        ${active === 'home' ? 'active' : ''}`} href="/"><i className="fa fa-home"></i>&nbsp;&nbsp;Home</a>
+        ${active === 'home' ? 'active' : ''}`} href="/tuiter"><i className="fa fa-home"></i>&nbsp;&nbsp;Home</a>
 
                 <a className={`list-group-item
-        ${active === 'explore' ? 'active' : ''}`} href="/"><i className="fa fa-hashtag"></i>&nbsp;&nbsp;Explore</a>
+        ${active === 'explore' ? 'active' : ''}`} href="/tuiter/explore"><i className="fa fa-hashtag"></i>&nbsp;&nbsp;Explore</a>
 
                 <a className={`list-group-item
         ${active === 'notifications' ? 'active' : ''}`} href="/"><i
