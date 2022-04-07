@@ -4,7 +4,6 @@ import TuitList from "../tuit-list";
 const HomeScreen = () => {
     return(
         <div>
-            <WhatsHappening/>
             <TuitList/>
         </div>
     )
