@@ -6,6 +6,8 @@ const tuitsReducer =
             case 'create-tuit':
                 const newTuit = {
                     tuit: action.tuit,
+                    title:action.tuit,
+                    "logo-image":action["logo-image"],
                     _id: (new Date()).getTime() + '',
                     postedBy: {
                         "username": "ReactJS"
