@@ -30,7 +30,7 @@ function App() {
               <Route path="profile"
                 element={<Profile />}></Route>
               <Route path="profileedit"
-                     element={<Profileedit />}></Route>
+                element={<Profileedit />}></Route>
             </Route>
           </Route>
         </Routes>
