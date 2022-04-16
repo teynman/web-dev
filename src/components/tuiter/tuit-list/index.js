@@ -6,6 +6,10 @@ import { updateTuit, createTuit, deleteTuit, findAllTuits }
 import TuitListItem
   from "./tuit-list-item";
 // import './tuits.css';
+import Image from "../images/image.png";
+import riji from "../images/riji.png";
+import xiaonian from "../images/xiaonian.png";
+import zhexian from "../images/zhexian.png";
 
 const TuitList = () => {
   const tuits = useSelector(
@@ -25,7 +29,7 @@ const TuitList = () => {
   return (
     <div>
       <div style={{ display: "flex", marginTop: 10 }}>
-        <img alt="" src="../images/1.jpg" style={{ width: 50, height: 50, objectFit: "cover", borderRadius: "25px" }} />
+        <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png" style={{ width: 50, height: 50, objectFit: "cover", borderRadius: "25px" }} />
         <textarea style={{ width: "100%", color: "#fff", backgroundColor: "transparent", outline: "none", border: "none", padding: 10, borderBottom: "1px solid #666" }} placeholder="What's happing?" value={newTuit.tuit}
           onChange={(event) =>
             setNewTuit({
@@ -35,10 +39,10 @@ const TuitList = () => {
       </div>
       <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 20, marginTop: 10 }}>
         <div style={{ display: "flex", marginLeft: 60, alignItems: "center" }}>
-          <img alt="" src="../images/image.png" style={{ width: 20, height: 20, objectFit: "contain", marginRight: 10 }} />
-          <img alt="" src="../images/zhexian.png" style={{ width: 20, height: 20, objectFit: "contain", marginRight: 10 }} />
-          <img alt="" src="../images/xiaonian.png" style={{ width: 20, height: 20, objectFit: "contain", marginRight: 10 }} />
-          <img alt="" src="../images/riji.png" style={{ width: 16, height: 16, objectFit: "contain", marginRight: 10 }} />
+          <img alt="" src={Image} style={{ width: 20, height: 20, objectFit: "contain", marginRight: 10 }} />
+          <img alt="" src={riji} style={{ width: 20, height: 20, objectFit: "contain", marginRight: 10 }} />
+          <img alt="" src={xiaonian} style={{ width: 20, height: 20, objectFit: "contain", marginRight: 10 }} />
+          <img alt="" src={zhexian} style={{ width: 16, height: 16, objectFit: "contain", marginRight: 10 }} />
         </div>
         <button style={{ backgroundColor: "#2a9fd6", border: "none", borderRadius: 40, color: "#fff", padding: "5px 10px" }} onClick={() => {
           createTuit(dispatch, newTuit);

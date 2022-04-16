@@ -3,6 +3,7 @@ import { useDispatch }
   from "react-redux";
 import { updateTuit, createTuit, deleteTuit, findAllTuits }
   from "../../actions/tuits-actions";
+import close from "../images/close.png"
 const TuitListItem = (props) => {
   const { tuit } = props;
   const dispatch = useDispatch();
@@ -18,7 +19,7 @@ const TuitListItem = (props) => {
           <div style={{ color: "#fff", cursor: "pointer" }} onClick={(event) =>{
               deleteTuit(dispatch, tuit);
           }}>
-            <img alt="" style={{ width: 20, height: 20, objectFit: "contain" }} src="/tuiter/close.png" />
+            <img alt="" style={{ width: 20, height: 20, objectFit: "contain" }} src={close} />
           </div>
         </div>
         <div style={{ color: "#fff" }}>{tuit.tuit}</div>

@@ -4,6 +4,10 @@ const NavigationSidebar = ({
                                active = 'explore'
                            }
 ) => {
+    active = window.location.href.indexOf("/tuiter")!==-1?'home':active
+    active = window.location.href.indexOf("/tuiter/profile")!==-1?'profile':active
+    active = window.location.href.indexOf("/tuiter/explore")!==-1?'explore':active
+
     return (
         <div>
             <div className="list-group">
@@ -33,7 +37,7 @@ const NavigationSidebar = ({
                     className="fa fa-list-ul"></i>&nbsp;&nbsp;Lists</a>
 
                 <a className={`list-group-item
-        ${active === 'profile' ? 'active' : ''}`} href="/"><i className="fa fa-user"></i>&nbsp;&nbsp;Profile</a>
+        ${active === 'profile' ? 'active' : ''}`} href="/tuiter/profile"><i className="fa fa-user"></i>&nbsp;&nbsp;Profile</a>
 
                 <a className={`list-group-item
         ${active === 'more' ? 'active' : ''}`} href="/"><i className="fa fa-circle"></i>&nbsp;&nbsp;More</a>
