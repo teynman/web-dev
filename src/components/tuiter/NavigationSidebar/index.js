@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const NavigationSidebar = ({
                                active = 'explore'
@@ -10,11 +11,11 @@ const NavigationSidebar = ({
                 <a className="list-group-item" href="/">
                     <i className="fab fa-twitter"></i></a>
 
-                <a className={`list-group-item
-        ${active === 'home' ? 'active' : ''}`} href="/"><i className="fa fa-home"></i>&nbsp;&nbsp;Home</a>
+                <Link to="/tuiter/home" className={`list-group-item
+        ${active === 'home' ? 'active' : ''}`} href="/"><i className="fa fa-home"></i>&nbsp;&nbsp;Home</Link>
 
-                <a className={`list-group-item
-        ${active === 'explore' ? 'active' : ''}`} href="/"><i className="fa fa-hashtag"></i>&nbsp;&nbsp;Explore</a>
+                <Link to="/tuiter/explore" className={`list-group-item
+        ${active === 'explore' ? 'active' : ''}`} href="/"><i className="fa fa-hashtag"></i>&nbsp;&nbsp;Explore</Link>
 
                 <a className={`list-group-item
         ${active === 'notifications' ? 'active' : ''}`} href="/"><i
